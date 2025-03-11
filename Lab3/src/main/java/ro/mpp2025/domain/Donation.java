@@ -2,30 +2,30 @@ package ro.mpp2025.domain;
 
 
 public class Donation extends Entity<Integer>{
-    private Integer charityCase;
-    private Integer donor;
+    private CharityCase charityCase;
+    private Donor donor;
     private float amount;
 
-    public Donation(Integer id, Integer charityCase, Integer donor, float amount) {
+    public Donation(Integer id, CharityCase charityCase, Donor donor, float amount) {
         this.id = id;
         this.charityCase = charityCase;
         this.donor = donor;
         this.amount = amount;
     }
 
-    public Integer getCharityCase() {
+    public CharityCase getCharityCase() {
         return charityCase;
     }
 
-    public void setCharityCase(Integer charityCase) {
+    public void setCharityCase(CharityCase charityCase) {
         this.charityCase = charityCase;
     }
 
-    public Integer getDonor() {
+    public Donor getDonor() {
         return donor;
     }
 
-    public void setDonor(Integer donor) {
+    public void setDonor(Donor donor) {
         this.donor = donor;
     }
 
